@@ -1,0 +1,186 @@
+<html>
+<head>
+<script>
+function myFunction() {
+    alert("sucessfully logged in");
+}
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("email must be filled out");
+        return false;
+    }
+
+    var x = document.forms["myForm"]["exp"].value;
+    if (x == null || x == "") {
+        alert("your experience must be filled out");
+        return false;
+	}
+var x = document.forms["myForm"]["address"].value;
+    if (x == null || x == "") {
+        alert("your experience must be filled out");
+        return false;
+	}
+}
+</script>
+<style>
+h1{
+color:#ff4d94;
+text-align:left;
+font-style:Serif;
+}
+a:link, a:visited {
+background:pink;
+font-size:24;
+color:white;
+background-color: pink;
+color: white;
+padding: 14px 25px;
+text-decoration: none;
+display: inline-block;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
+
+label,select
+{
+color:#ff4d94;
+text-align:left;
+font-style:Serif;
+}
+div.img {
+    margin: 5px;
+  
+    float: left;
+    width: 150px;
+}
+div.one{
+float:center;
+border:1px solid grey;
+background-color:grey;
+
+}
+</style>
+</head>
+<body>
+<div class="img">
+<img src="10.png"width="150"height="80">
+<br>
+<br>
+<br>
+</div>
+</div>
+<center>
+<br>
+<a href="skill.html">home</a>
+<a href="about.html">about</a>
+<a href="services.html">services</a>
+<a href="gallery.html">gallery</a>
+<a href="carres.html">careers</a>
+<a href="feedback.html">feedback</a>
+<a href="contact.html">contact</a>
+</center>
+<br>
+<br>
+
+<center>
+
+<br>
+<br>
+<br>
+<div>
+<img src="51.jpg" height="400"width="1327">
+</div>
+<br>
+</center>
+<center>
+<table>
+<form name="myForm" action="feedback.html"onsubmit="return validateForm()" method="post">
+<tr>
+<td>
+<label>First name:</label></td>
+<td>
+<input type="text" name="fname"></td>
+</tr>
+<tr>
+<td> 
+<label> Email:</label></td>
+<td>
+<input type="text" name="email"></td>
+</tr>
+<tr>
+<td>
+ <label>Your experience at beone:</label></td>
+<td>
+<textarea name="exp"rows="10" cols="30"></textarea></td>
+</tr>
+<tr>
+<td>
+<label>Address</label></td>
+<td>
+<textarea name="address"rows="10" cols="30"></textarea></td>
+<tr><td>
+<label>Price</label></td>
+<td>
+<select>
+  <option value="600">600</option>
+  <option value="700">700</option>
+  <option value="800">800</option>
+  <option value="900">900</option>
+<option value="1000">1000&above</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>services</label>
+</td>
+<td>
+<select>
+< option value="Shirodhara Massage"> Shirodhara Massage</option>
+<  option value="Churanas vedam Massage(Potli Massage)" > Churanas vedam Massage(Potli Massage)</option>
+<option value="Hair Cuts" value="Hair Cuts" > Hair Cuts</option>
+<option value="Hair Colors" value="Hair Colors" > Hair Colors</option>
+<option value="Hair Straightening" value="Hair Straightening" > Hair Straightening</option>
+< option value="Organic Facials" value="Organic Facials">Organic Facials</option>
+< option value="Deep Tissue Massage" value="Deep Tissue Massage" >Deep Tissue Massage</option>
+<option value="Thai Massage" value="Thai Massage" >Thai Massage</option>
+<option value="Balinese Massage" value="Balinese Massage" >Balinese Massage</option>
+< option value="Aromatherapy Massage" value="Aromatherapy Massage">Aromatherapy Massage</option>
+< option value="Reflexology" value="Reflexology" >Reflexology</option>
+<option value ="Back & Neck Massage" value="Back & Neck Massage">Back & Neck Massage</option>
+< option value="Bridal Make-up" value="Bridal Make-up" >Bridal Make-up</option>
+< option value="Manicure" value="Manicure" >Manicure</option>
+< option value="Pedicure" value="Pedicure">Pedicure</option>
+</select></tr>
+<br>
+<br>
+<tr>
+<td>
+<center><button onclick="myFunction()">submit</button><center></td>
+</tr>
+</b> 
+</form>
+
+</table>
+</center>
+<br>
+<br>
+<br>
+<br>
+
+<div class="one">
+<h2>FOLLOW US ON:</h2>
+<center>
+<a href="http://www.facebook.com/"><img src="31.png" type="logo" width="50" height="50" ></a>
+<a href="http://www.twitter.com/"><img class="logo" src="33.png" type="logo" width="50" height="50"></a></center>
+</body>
+
+</html>

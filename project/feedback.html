@@ -1,0 +1,160 @@
+<html>
+<head>
+
+<script>
+function myFunction( ) {
+    alert("feedback submitted");
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("email must be filled out");
+        return false;
+    }
+
+    var x = document.forms["myForm"]["exp"].value;
+    if (x == null || x == "") {
+        alert("your experience must be filled out");
+        return false;
+	}
+
+    var x = document.forms["myForm"]["sugg"].value;
+    if (x == null || x == "") {
+        alert("suggestions  must be filled out");
+        return false;
+	}
+
+
+    
+}
+
+
+</script>
+<style>
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+}
+
+a:link, a:visited {
+background:pink;
+font-size:24;
+color:white;
+background-color: pink;
+color: white;
+padding: 14px 25px;
+text-decoration: none;
+display: inline-block;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
+div.two {
+    background-color:grey;
+    width: 1000px;
+    padding: 150px;
+margin:23px;
+text-align:center;
+}
+label
+{
+color:#ff4d94;
+text-align:left;
+font-style:Serif;
+}
+div.one{
+float:center;
+border:1px solid grey;
+background-color:grey;
+
+}	
+</style>
+</head>
+<body>
+<div class="img">
+<img src="10.png"width="150"height="80">
+</div>
+<nav>
+<center>
+<br>
+<a href="skill.html">home</a>
+<a href="about.html">about</a>
+<a href="services.html">services</a>
+<a href="gallery.html">gallery</a>
+<a href="carres.html">careers</a>
+<a href="feedback.html">feedback</a>
+<a href="contact.html">contact</a>
+</center>
+</nav>
+<br>
+<br>
+<br>
+<img src="47.png" height="500" width="1330">
+<br>
+<br>
+<center>
+<div calss="two">
+<form name="myForm" action="feedback.html"onsubmit="return validateForm()" method="post">
+
+<b>
+<table><tr>
+<td><b><label>First name:</label></b></td>
+<td>
+<input type="text" name="fname"><br></td>
+</tr>
+<tr>
+<td>
+ <label><b> Email:</label></b></td>
+<td>
+<input type="text" name="email"></td>
+</tr>
+<tr>
+<td>
+ <label><b>Your experience @ Be1:</label></b></td>
+<td>
+<textarea name="exp"rows="10" cols="30"></textarea></td>
+</tr>
+<td>
+<label><b>Any Suggestions</label></b></td>
+<td>
+<textarea name="sugg"rows="10" cols="30"></textarea></td>
+</tr>
+<tr>
+<td>
+<button onclick="myFunction()">submit</button>
+
+
+</td>
+</tr>
+</table>
+</div>
+</b> 
+</form>
+</div>
+</center>
+<br>
+<div class="one">
+<h2>FOLLOW US ON:</h2>
+
+<a href="http://www.facebook.com/"><img src="31.png" type="logo" width="50" height="50" ></a>
+<a href="http://www.twitter.com/"><img class="logo" src="33.png" type="logo" width="50" height="50"></a>
+
+
+
+
+<br>
+<br>
+</div>
+
+</body>
+</html>

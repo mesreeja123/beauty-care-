@@ -1,0 +1,143 @@
+<html>
+<head>
+<script>
+function myFunction( ) {
+    alert("Data has been sucessfully submitted!");
+}
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("email must be filled out");
+        return false;
+    }
+
+    var x = document.forms["myForm"]["address"].value;
+    if (x == null || x == "") {
+        alert("address must be filled out");
+        return false;
+	}
+}
+</script>
+<style>
+label,select
+{
+
+color:#ff4d94;
+text-align:left;
+font-style:Serif;
+}
+
+a:link, a:visited {
+background:pink;
+font-size:24;
+color:white;
+background-color: pink;
+color: white;
+padding: 14px 25px;
+text-decoration: none;
+display: inline-block;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
+div.img {
+    margin: 5px;
+  
+    float: left;
+    width: 150px;
+}
+div.one{
+float:center;
+border:1px solid grey;
+background-color:grey;
+
+}
+</style>
+</head>
+<body>
+<div class="img">
+<img src="10.png"width="150"height="80">
+<br>
+<br>
+<br>
+</div>
+<center>
+<a href="skill.html">home</a>
+<a href="about.html">about</a>
+<a href="services.html">services</a>
+<a href="gallery.html">gallery</a>
+<a href="carres.html">careers</a>
+<a href="feedback.html">feedback</a>
+<a href="contact.html">contact</a>
+</center>
+<br>
+<br>
+<br>
+<center>
+<img src="45.jpg"height=300" width="1360">
+</center>
+<br>
+<br>
+<center>
+<table>
+<form name="myForm" action="feedback.html"onsubmit="return validateForm()" method="post">
+
+<tr>
+<td>
+<label><b>First name:</label></b></td>
+<td>
+<input type="text" name="fname"></td>
+</tr>
+<tr>
+<td><b>
+ <label> Email:</label></b></td>
+<td>
+<input type="text" name="email"></td>
+</tr>
+<tr>
+<td><b>
+<label>Address</label><br></b></td>
+<td>
+<textarea name="address"rows="10" cols="30"></textarea></td>
+</tr>
+<tr>
+<td><b>
+<label>Post applying for</label></b></td>
+<td>
+<select>
+  <option value="Font office executive">Font office executive</option>
+  <option value="Beautician">Beautician</option>
+  <option value="Hairstylist">Haristylist</option>
+  <option value="Pedicure">Pedicure</option>
+<option value="therapist">Therapist</option>
+</select>
+</td>
+<tr>
+<td>
+<button onclick="myFunction()">submit</button></td>
+</tr>
+</table>
+<b>
+</form>
+</center>
+<br>
+<div class="one">
+<h2>FOLLOW US ON:</h2>
+<center>
+<a href="http://www.facebook.com/"><img src="31.png" type="logo" width="50" height="50" ></a>
+<a href="http://www.twitter.com/"><img class="logo" src="33.png" type="logo" width="50" height="50"></a>
+
+<center>
+
+
+<br>
+<br>
+</div>
+</body>
+</html>

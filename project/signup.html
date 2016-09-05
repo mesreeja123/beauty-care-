@@ -1,0 +1,209 @@
+<html>
+<head>
+<script>
+function myFunction( ) {
+    alert("sign up submitted");
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("email must be filled out");
+        return false;
+    }
+ var x = document.forms["myForm"]["pwd"].value;
+    if (x == null || x == "") {
+        alert("password  must be filled out");
+        return false;
+	}
+
+
+    var x = document.forms["myForm"]["phno"].value;
+    if (x == null || x == "") {
+        alert("phone number must be filled out");
+        return false;
+	}
+
+    var x = document.forms["myForm"]["adhar"].value;
+    if (x == null || x == "") {
+        alert("adhar number  must be filled out");
+        return false;
+	}
+
+
+    
+}
+
+
+</script>
+<style>
+label,select
+{
+
+color:#ff4d94;
+text-align:left;
+font-style:Serif;
+}
+
+h1,h3
+{
+color:#ff4d94;
+text-align:center;
+font-style:Serif;
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+}
+a:link, a:visited {
+background:pink;
+font-size:24;
+color:white;
+background-color: pink;
+color: white;
+padding: 14px 25px;
+text-decoration: none;
+display: inline-block;
+
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
+div.one{
+float:center;
+border:1px solid grey;
+background-color:grey;
+
+}
+
+a.five{
+background-color: white;
+}
+
+
+</style>
+</head>
+<body>
+<div class="img">
+<img src="10.png"width="150"height="80">
+</div>
+
+<nav>
+<center>
+<br>
+<a href="skill.html">home</a>
+<a href="about.html">about</a>
+<a href="services.html">services</a>
+<a href="gallery.html">gallery</a>
+<a href="carres.html">careers</a>
+<a href="feedback.html">feedback</a>
+<a href="contact.html">contact</a>
+</center>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<img src="57.jpg" height="400" width="1350">
+<div class="four">
+<center>
+<form name="myForm" action="signup.html"onsubmit="return validateForm()" method="post">
+<table>
+
+<br>
+<br>
+<tr>
+<td>
+<b><label>First name:</label></b></td>
+<td>
+<input type="text" name="fname"></td>
+</tr>
+
+<tr>
+<td><b>
+ <label> Email:</label></td></b>
+<td>
+<input type="text" name="email"></td>
+</tr>
+
+<tr>
+<td><b>
+ <label>New Password</label></b>
+</td>
+<td>
+<input type="text" name="pwd"></td>
+</tr>
+
+
+<tr>
+<td><b>
+ <label> Phone number:</label></b>
+</td>
+<td>
+<input type="text" name="phno"></td>
+</tr>
+
+<tr>
+<td><b>
+ <label> Adhar card no:</label></b>
+</td>
+<td>
+<input type="text" name="adhar"></td>
+</tr>
+
+<tr>
+<td><b>
+ <label> Gender</label></b>
+</td>
+<td>
+<input type="radio" name="female"><label>Female</label></td>
+<td>
+<input type="radio" name="male"><label>male</label></td>
+</tr>
+<center>
+<tr>
+<div class="five">
+<td><a class="five"href=form.html >
+<input type="button" name="submit" value=SUBMIT></td></a>
+</div>
+</tr>
+</center>
+
+</table>
+</form>
+</center>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="one">
+<center>
+<h2>FOLLOW US ON:</h2>
+
+<a href="http://www.facebook.com/"><img src="31.png" type="logo" width="50" height="50" ></a>
+<a href="http://www.twitter.com/"><img class="logo" src="33.png" type="logo" width="50" height="50"></a>
+</center>
+<br>
+<br>
+</div>
+</body>
+</html>
+
+
+
+

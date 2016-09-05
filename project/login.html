@@ -1,0 +1,151 @@
+<html>
+<script>
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x = document.forms["myForm"]["pwd"].value;
+    if (x == null || x == "") {
+        alert("password must be filled out");
+        return false;
+    }
+
+var x = document.forms["myForm"]["submit"].value;
+    if (x == null || x == "") {
+        alert("sumbitted!!");
+        return false;
+    }
+
+}
+</script>
+<head>
+<style>
+label,select
+{
+
+color:#ff4d94;
+text-align:left;
+font-style:Serif;
+}
+
+h1,h3
+{
+color:#ff4d94;
+text-align:center;
+font-style:Serif;
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+}
+a:link, a:visited {
+background:pink;
+font-size:24;
+color:white;
+background-color: pink;
+color: white;
+padding: 14px 25px;
+text-decoration: none;
+display: inline-block;
+
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
+div.one{
+float:center;
+border:1px solid grey;
+background-color:grey;
+
+}
+
+a.five{
+background-color: white;
+}
+
+
+</style>
+</head>
+<body>
+<div class="img">
+<img src="10.png"width="150"height="80">
+</div>
+
+<nav>
+<center>
+<br>
+<a href="skill.html">home</a>
+<a href="about.html">about</a>
+<a href="services.html">services</a>
+<a href="gallery.html">gallery</a>
+<a href="carres.html">careers</a>
+<a href="feedback.html">feedback</a>
+<a href="contact.html">contact</a>
+</center>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<img src="60.jpg" height="400" width="1325">
+<div class="four">
+<br>
+<br>
+<center>
+<form name="myForm" action="login.html" onsubmit="return validateForm()" method="post">
+<table>
+<td>
+<tr><label>Username:</label></tr>
+<tr><input type="text" name="fname"></tr>
+</td>
+<br>
+<br>
+<tr>
+<label>Password:</label></tr>
+<tr><input type="password" name="pwd" ></tr>
+</td>
+<br>
+<br>
+
+<td><tr>
+<div class="five">
+<tr><a class="five"href=form.html >
+<input type="button" name="submit" value=SUBMIT></tr></a>
+</div>
+</td>
+</table>
+</form>
+</center>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="one">
+<center>
+<h2>FOLLOW US ON:</h2>
+
+<a href="http://www.facebook.com/"><img src="31.png" type="logo" width="50" height="50" ></a>
+<a href="http://www.twitter.com/"><img class="logo" src="33.png" type="logo" width="50" height="50"></a>
+</center>
+<br>
+<br>
+</div>
+</body>
+</html>
+
+
+
+
